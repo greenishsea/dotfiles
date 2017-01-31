@@ -1,0 +1,21 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "terminal.integrated.shellArgs.osx": [ "-l" ],
+
+    // always-in-a-new-tab settings
+    "workbench.editor.enablePreview": false,
+
+    // Controls how folders are being reopened after a restart. Select 'none' to never reopen a folder, 'one' to reopen the last folder you worked on or 'all' to reopen all folders of your last session.
+    "window.reopenFolders": "all",
+
+    // Controls if a window should restore to full screen mode if it was exited in full screen mode.
+    "window.restoreFullscreen": true,
+    "typescript.check.tscVersion": false,
+    "window.zoomLevel": 0,
+
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "code-runner.executorMap": {
+        "python": "/Users/hiroyuki/.pyenv/shims/python"
+    }
+}

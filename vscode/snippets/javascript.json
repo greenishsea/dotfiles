@@ -1,0 +1,137 @@
+{
+
+	 // Place your snippets for JavaScript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	 // $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables. Variables with the same id are connected.
+	 // Example:
+	"Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	},
+
+    "import": {
+        "prefix": "imp",
+        "body": "import $1 from '${module}';$0",
+        "description": "Imports entire module statement in ES6 syntax"
+    },
+    "importDestructing": {
+        "prefix": "imd",
+        "body": "import { $1 } from '${2:module}';$0",
+        "description": "Imports only a portion of the module in ES6 syntax"
+    },  
+    "importEverything": {
+        "prefix": "ime",
+        "body": "import * as ${1:alias} from '${2:module}';$0",
+        "description": "Imports everything as alias from the module in ES6 syntax"
+    },  
+    "importAs": {
+        "prefix": "ima",
+        "body": "import {${1:originalName} as ${2:alias} } from '${3:module}';$0",
+        "description": "Imports a specific portion of the module by assigning a local alias in ES6 syntax"
+    },  
+    "exportNamedFunction": {
+        "prefix": "enf",
+        "body": "export const ${1:functionName} = (${2:params}) =>  {\n\t$0\n};\n",
+        "description": "Export named function in ES6 syntax"
+    },  
+    "exportDefaultFunction": {
+        "prefix": "edf",
+        "body": "export default (${1:params}) =>  {\n\t$0\n};\n",
+        "description": "Export default function in ES6 syntax"
+    },  
+    "exportClass": {
+        "prefix": "ecl",
+        "body": "export default class ${1:className} {\n\t$0\n};\n",
+        "description": "Export default class in ES6 syntax"
+    },  
+    "exportClassExtends": {
+        "prefix": "ece",
+        "body": "export default class ${1:className} extends ${2:baseclassName} {\n\t$0\n};\n",
+        "description": "Export default class which extends a base one in ES6 syntax"
+    },
+
+    "constructor": {
+        "prefix": "con",
+        "body": "constructor(${1:params}) {\n\t${0}\n}",
+        "description": "Add default constructor in a class in ES6 syntax"
+    },
+    "mehtod": {
+        "prefix": "met",
+        "body": "${1:methodName}(${2:params}) {\n\t${0}\n}",
+        "description": "Creates a mehtod inside a class in ES6 syntax"
+    },
+    "propertyGet": {
+        "prefix": "pge",
+        "body": "get ${1:propertyName}() {\n\treturn this.${0};\n}",
+        "description": "Creates a getter property inside a class in ES6 syntax"
+    },
+    "propertyset": {
+        "prefix": "pse",
+        "body": "set ${1:propertyName}(${2:value}) {\n\t${0};\n}",
+        "description": "Creates a setter property inside a class in ES6 syntax"
+    },
+
+    "forEach": {
+        "prefix": "fre",
+        "body": "${1:array}.forEach(${2:currentItem} => {\n\t${0}\n});",
+        "description": "Creates a forEach statement in ES6 syntax"
+    },
+    "forOf": {
+        "prefix": "fof",
+        "body": "for(let ${1:item} of ${2:object}) {\n\t${0}\n}",
+        "description": "Iterating over property names of iterable objects"
+    },
+    "forIn": {
+        "prefix": "fin",
+        "body": "for(let ${1:item} in ${2:object}) {\n\t${0}\n}",
+        "description": "Iterating over property values of iterable objects"
+    },
+    "anonymousFunction": {
+        "prefix": "afn",
+        "body": "(${1:params}) => {\n\t${2}\n}",
+        "description": "Creates an anonymous function in ES6 syntax"
+    },
+    "namedFunction": {
+        "prefix": "nfn",
+        "body": "const ${1:name} = (${2:params}) => {\n\t${3}\n}",
+        "description": "Creates a named function in ES6 syntax"
+    },
+    "destructingObject": {
+        "prefix": "dob",
+        "body": "const {${1:propertyName}} = ${2:objectToDestruct};",
+        "description": "Creates and assigns a local variable using object destructing"
+    },
+    "destructingArray": {
+        "prefix": "dar",
+        "body": "const [${1:propertyName}] = ${2:arrayToDestruct};",
+        "description": "Creates and assigns a local variable using array destructing"
+    },
+    "setInterval": {
+        "prefix": "sti",
+        "body": "setInterval(() => {\n\t${2}\n}, ${0:intervalInms});",
+        "description": "Executes the given function at specified intervals in ES6 syntax"
+    },
+    "setTimeOut": {
+        "prefix": "sto",
+        "body": "setTimeout(() => {\n\t${2}\n}, ${1:delayInms});",
+        "description": "Executes the given function after the specified delay in ES6 syntax"
+    },
+
+
+    "reduxActionTypeAndCreator": {
+        "prefix": "ract",
+        "body": "/**\n * ${1:__Comment_for_action__}\n * @param {${5:__type__}} payload.${4:__param__}  :${6:__Comment_for_first_param__}\n */\nexport const ${2:__ACTION_TYPE__} = \"${2:__ACTION_TYPE__}\";\nexport function ${3:__actionCreator__}(${4:__param__}) {\n\treturn {\n\t\ttype: ${2:__ACTION_TYPE__},\n\t\tpayload: {${4:__param__}}\n\t};\n}",
+        "description": "Creates a redux adtionType and action creator function"
+    },
+
+    "reduxReducer": {
+        "prefix": "rred",
+        "body": "function ${1:__stateName__}(state = initialState.${1:__stateName__}, action) {\n\tswitch (action.type) {\n\t\tcase ${2:__ACTION_TYPE__}:\n\t\t\treturn Object.assign({}, state, {\n\t\t\t\t${3:__expression__}\n\t\t\t});\n\t\tdefault:\n\t\t\treturn state;\n\t}\n}",
+        "description": "Creates a redux reducer function"
+    }
+
+}
