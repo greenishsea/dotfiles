@@ -72,8 +72,12 @@ echo "export PATH=/usr/local/Cellar/openssl/1.0.2j/bin:$PATH" >> ~/.bash_profile
 ### Better touch tool -> after cask & license
 load file hiroyuki.bettertouchtool
 
-### ei kana command key config
-https://ei-kana.appspot.com/
+### (For US keyboard) ei kana command key config
+https://qiita.com/onigra/items/99e77becd0c42661d360
+
+karabiner-elements ( brew cask install karabiner-elements )
+or
+ei-kana ( brew cask install cmd-eikana )
 
 ### iTerm2 color setting
 copy solarized colors files and profiles/colors import and set solarized dark
@@ -104,6 +108,11 @@ Host github
   HostName github.com
   IdentityFile ~/.ssh/id_rsa
   User git
+
+### Vscode
+la ~/Library/ApplicationSupport/Code/User/settings.json
+la ~/Library/ApplicationSupport/Code/User/keybindings.json
+la ~/Library/ApplicationSupport/Code/User/snippets/
 
 ### add Automator workflow files
 

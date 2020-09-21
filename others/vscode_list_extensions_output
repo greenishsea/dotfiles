@@ -1,34 +1,55 @@
-Alan.MochaSnippets
-Compulim.vscode-mocha
-CraigMaslowski.erb
-EditorConfig.EditorConfig
-HookyQR.beautify
-PeterJausovec.vscode-docker
-alefragnani.Bookmarks
-alefragnani.numbered-bookmarks
-alefragnani.project-manager
-anseki.vscode-color
-atefth.ruby-on-rails-snippets
-dbaeumer.vscode-eslint
-dgerrard.stuck-overflow
-dkundel.vscode-new-file
-donjayamanne.javadebugger
-donjayamanne.python
-formulahendry.code-runner
-goessner.mdmath
-groksrc.ruby
-humao.rest-client
-misogi.ruby-rubocop
-ms-vscode.cpptools
-msjsdiag.debugger-for-chrome
-qinjia.view-in-browser
-rebornix.Ruby
-redhat.java
-ronaldloyko.coffeescript-snippets
-shinnn.stylelint
-sporto.rails-go-to-spec
-tungvn.wordpress-snippet
-vilicvane.es-quotes
-wcwhitehead.bootstrap-3-snippets
-xabikos.JasmineSnippets
-xabikos.ReactSnippets
+code --install-extension Alan.MochaSnippets
+code --install-extension Compulim.vscode-mocha
+code --install-extension CraigMaslowski.erb
+code --install-extension albert.TabOut
+code --install-extension alefragnani.Bookmarks
+code --install-extension alefragnani.numbered-bookmarks
+code --install-extension alefragnani.project-manager
+code --install-extension AndrewRazumovsky.vscode-styled-jsx-languageserver
+code --install-extension anseki.vscode-color
+code --install-extension atefth.ruby-on-rails-snippets
+code --install-extension blanu.vscode-styled-jsx
+code --install-extension capaj.vscode-standardjs-snippets
+code --install-extension codezombiech.gitignore
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension dgerrard.stuck-overflow
+code --install-extension dkundel.vscode-new-file
+code --install-extension donjayamanne.githistory
+code --install-extension donjayamanne.javadebugger
+code --install-extension eamodio.gitlens
+code --install-extension EditorConfig.EditorConfig
+code --install-extension eriklynd.json-tools
+code --install-extension formulahendry.code-runner
+code --install-extension goessner.mdmath
+code --install-extension groksrc.ruby
+code --install-extension hediet.vscode-drawio
+code --install-extension HookyQR.beautify
+code --install-extension humao.rest-client
+code --install-extension janisdd.vscode-edit-csv
+code --install-extension jebbs.plantuml
+code --install-extension jpoissonnier.vscode-styled-components
+code --install-extension jumpinjackie.vscode-map-preview
+code --install-extension misogi.ruby-rubocop
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-python.python
+code --install-extension ms-vscode.cpptools
+code --install-extension msjsdiag.debugger-for-chrome
+code --install-extension octref.vetur
+code --install-extension qinjia.view-in-browser
+code --install-extension rebornix.ruby
+code --install-extension redhat.java
+code --install-extension ritwickdey.LiveServer
+code --install-extension silvenon.mdx
+code --install-extension skyapps.fish-vscode
+code --install-extension sporto.rails-go-to-spec
+code --install-extension tungvn.wordpress-snippet
+code --install-extension vilicvane.es-quotes
+code --install-extension VisualStudioExptTeam.vscodeintellicode
+code --install-extension vscjava.vscode-java-debug
+code --install-extension vscjava.vscode-java-dependency
+code --install-extension vscjava.vscode-java-pack
+code --install-extension vscjava.vscode-java-test
+code --install-extension vscjava.vscode-maven
+code --install-extension wcwhitehead.bootstrap-3-snippets
+code --install-extension wingrunr21.vscode-ruby
+code --install-extension xabikos.ReactSnippets

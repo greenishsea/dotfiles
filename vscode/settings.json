@@ -1,9 +1,22 @@
 // Place your settings in this file to overwrite the default settings
 {
+    // Avoid high CPU usage 2020/06/30
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/.rvm/**":true,
+        "**/node_modules/**": true,
+        "**/Library/**":true,
+        "**/GoogleDrive/**":true,
+        "**/Dropbox/**":true,
+        "**/.cocoapods/**":true,
+        "**/Pictures/**":true,
+    },
+
     "terminal.integrated.shellArgs.osx": [ "-l" ],
 
     // always-in-a-new-tab settings
-    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreview": true,
 
     // Controls how folders are being reopened after a restart. Select 'none' to never reopen a folder, 'one' to reopen the last folder you worked on or 'all' to reopen all folders of your last session.
     "window.reopenFolders": "all",
@@ -12,10 +25,29 @@
     "window.restoreFullscreen": true,
     "typescript.check.tscVersion": false,
     "window.zoomLevel": 0,
-
+    "C_Cpp.intelliSenseEngine": "Default",
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": ["--ignore=E501"],
     "code-runner.executorMap": {
-        "python": "/Users/hiroyuki/.pyenv/shims/python"
-    }
+        // "python": "/Users/hiroyuki/.pyenv/shims/python"
+        // "python": "/Users/hiroyuki/.anyenv/envs/pyenv/shims/python"        
+        "python": "/Users/hiroyuki/.asdf/shims/python"        
+    },
+    "files.autoSave": "off",
+
+    "editor.minimap.enabled": false,
+
+    "editor.renderIndentGuides": false,
+
+    "editor.multiCursorModifier": "ctrlCmd",
+    "git.enableSmartCommit": true,
+    "extensions.ignoreRecommendations": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.jediEnabled": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "python.languageServer": "Microsoft"
 }
